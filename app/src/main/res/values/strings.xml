@@ -1,0 +1,34 @@
+
+<resources><string name="app_name">Final Mobile Teste</string>
+<string name="button_user_profile">Perfil do Usuário</string>
+<string name="button_settings">Configurações</string>
+<string name="button_about">Sobre</string>
+<string name="button_exercise_monitoring">Monitoramento de Exercício</string>
+<string name="button_history">Histórico</string>
+
+<string name="label_sex">Sexo:</string>
+<string name="male">Masculino</string>
+<string name="female">Femenino</string>
+<string name="label_weight">Peso:</string>
+<string name="label_height">Altura:</string>
+<string name="label_birthdate">Data de Nacimiento:</string>
+<string name="button_save">Salvar</string>
+
+<string name="label_exercise_type">Tipo de exercício:</string>
+<string name="walk">Caminhada</string>
+<string name="run">Corrida</string>
+<string name="bicycle">Bicicleta</string>
+<string name="label_speed_unit">Unidade de velocidade:</string>
+<string name="Km">Km/h</string>
+<string name="m">m/s</string>
+<string name="label_map_orientation">Orientação do mapa:</string>
+<string name="none">Nenhuma</string>
+<string name="North_up">North up</string>
+<string name="Course_up">Course up</string>
+<string name="label_map_type">Tipo de mapa:</string>
+<string name="vector">Vetorial</string>
+<string name="satellite">Satélite</string>
+<string name="button_save_settings">Salvar Configurações</string>
+<string name="title_activity_maps">MapsActivity</string>
+<string name="title_activity_exercise_monitoring">ExerciseMonitoringActivity</string>
+</resources>

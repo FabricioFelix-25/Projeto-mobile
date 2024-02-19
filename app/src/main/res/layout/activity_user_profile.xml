@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserProfileActivity">
+
+
+    <!-- Sexo -->
+    <TextView
+        android:id="@+id/textViewSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_sex"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSex"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"/>
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"/>
+    </RadioGroup>
+
+    <!-- Peso -->
+
+    <!-- Altura -->
+
+    <!-- Data de Nascimento -->
+
+    <!-- Botão para salvar os dados -->
+
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupSexo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/label_weight"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/textViewPeso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:hint="Kg" />
+
+    <TextView
+        android:id="@+id/textViewAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPeso"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:text="@string/label_height"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewAltura"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="35dp"
+        android:hint="m" />
+
+    <TextView
+        android:id="@+id/textViewDataNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAltura"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/label_birthdate"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextDataNascimento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewDataNascimento"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:hint="dd/mm/yyyy" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDataNascimento"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="30dp"
+        android:background="#3FD134"
+        android:text="@string/button_save" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#3FD134"
+
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#000000"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="ExtraText" />
+
+</RelativeLayout>

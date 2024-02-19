@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsActivity">
+
+
+    <!-- Tipo de exercício -->
+    <TextView
+        android:id="@+id/textViewExerciseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_exercise_type"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupExercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewExerciseType"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioCaminhada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/walk"/>
+
+        <RadioButton
+            android:id="@+id/radioCorrida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/run"/>
+
+        <RadioButton
+            android:id="@+id/radioBicicleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bicycle"/>
+    </RadioGroup>
+
+    <!-- Unidade de velocidade -->
+    <TextView
+        android:id="@+id/textViewSpeedUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_speed_unit"
+        android:textSize="18sp"
+        android:layout_below="@id/radioGroupExercicio"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupVelocidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpeedUnit"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioKmph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Km"/>
+
+        <RadioButton
+            android:id="@+id/radioMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m"/>
+    </RadioGroup>
+
+    <!-- Orientação do mapa -->
+    <TextView
+        android:id="@+id/textViewMapOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_map_orientation"
+        android:textSize="18sp"
+        android:layout_below="@id/radioGroupVelocidade"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMapOrientation"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioNenhuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none"/>
+
+        <RadioButton
+            android:id="@+id/radioNorthUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/North_up"/>
+
+        <RadioButton
+            android:id="@+id/radioCourseUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Course_up"/>
+    </RadioGroup>
+
+    <!-- Tipo de mapa -->
+    <TextView
+        android:id="@+id/textViewMapType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_map_type"
+        android:textSize="18sp"
+        android:layout_below="@id/radioGroupMapa"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMapType"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioVetorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vector"/>
+
+        <RadioButton
+            android:id="@+id/radioSatelite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/satellite"/>
+    </RadioGroup>
+
+    <!-- Botão para salvar as configurações -->
+    <Button
+        android:id="@+id/buttonSalvarConfiguracoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_settings"
+        android:layout_below="@id/radioGroupTipoMapa"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#3FD134"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>
